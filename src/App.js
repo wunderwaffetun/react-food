@@ -11,7 +11,7 @@ function App() {
   return <>
     <Header />
     <main className="container main-content">
-      <Router>
+      <Router basename="/react-food">
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="category/:name" element={<Category/>} />
