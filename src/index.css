@@ -1,0 +1,69 @@
+body {
+  
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+main {
+  min-height: calc(100vh - 64px - 186px);
+  padding: 20px 0;
+  position: relative;
+}
+
+.preloader-wrapper{
+  position: absolute;
+  left: 50%; 
+  top: 50%;
+  /* transform: translate(-50%, -50%); */
+}
+
+.categories-parent, .meals-list{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;  
+}
+.card{
+  display: flex;
+  flex-direction: column;
+}
+.card-content{
+  flex-grow: 1;
+}
+.no-dishes{
+  width: auto;
+  white-space: nowrap;
+  text-transform: uppercase;
+  transform: translate(-50%);
+}
+.title-recipe{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+}
+.title-recipe-img{
+  width: 100%;
+}
+.row{
+  display: flex;
+}
+.title-recipe-descr{
+  text-align: justify;
+}
+.recipe-area{
+  margin-bottom: 30px;
+}
+iframe{
+  width: 100%;
+  height: 360px;
+}
+/* .categories-parent:nth-child(n){
+} */
